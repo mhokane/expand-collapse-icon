@@ -1,0 +1,46 @@
+//------------------------------------//
+//	NEAT grid
+//------------------------------------//
+
+@import "neat"
+
+.container
+	@include outer-container
+
+.test
+	@include span-columns(12)
+
+
+//------------------------------------//
+//	COLORS
+//------------------------------------//
+
+$black: #333
+
+//------------------------------------//
+//	BASELINE
+//------------------------------------//
+
+body
+	padding: 50px
+	color: #454545
+
+h1
+	font-size: modular-scale(2em,   1, $perfect-fourth) 
+	margin: modular-scale(1em,   1, $perfect-fourth) 0 
+
+h2
+	font-size: modular-scale(2em, -1, $minor-second)
+	font-weight: bold 
+	margin: 0
+
+p 
+	font-size: modular-scale(2em,   -1, $perfect-fourth)
+	line-height: modular-scale(1em,   1, $perfect-fourth)
+	margin: modular-scale(1em,   1, $minor-second) 0
+
+//------------------------------------//
+//	SVG
+//------------------------------------//
+
+@import "icons"

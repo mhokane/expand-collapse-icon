@@ -1,0 +1,26 @@
+.svg-wrap
+  text-align: center 
+
+  .icons
+    width: 45px
+    height: auto 
+    margin-bottom: 1em
+    .icons__stroke
+      fill: none
+      stroke: $black
+      stroke-width: 4
+      stroke-linecap: round
+      stroke-linejoin: round
+      stroke-miterlimit: 10
+
+    &.icon--ex-col
+      .icon--ex-col--expand
+        display: none 
+      .icon--ex-col--collapse
+
+      &:hover
+        .icon--ex-col--expand
+          display: block 
+        .icon--ex-col--collapse
+          display: none 
+
