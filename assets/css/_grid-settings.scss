@@ -1,0 +1,14 @@
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+
+$gutter: golden-ratio(1em, 1);
+$grid-columns: 10;
+$max-width: em(1600);
+
+// Define your breakpoints
+$phone-land: new-breakpoint(min-width 415px);
+$tablet: new-breakpoint(min-width 500px); 
+$home-700: new-breakpoint(min-width 700px);
+$tablet-land: new-breakpoint(min-width 1000px);
+$desktop: new-breakpoint(min-width 1300px);
+$desktop-lg: new-breakpoint(min-width 1600px);
+$vertical: new-breakpoint(max-height 700px min-width 1000px);

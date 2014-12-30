@@ -1,30 +1,65 @@
 .svg-wrap
   text-align: center 
+  +span-columns(10)
+  background-color: $gray
+  padding: 2em
+  +media($tablet)
+    +span-columns(3.33)
 
-  .icons
-    width: 45px
-    height: auto 
-    margin-bottom: 1em
+.svg-wrap--ex-col
+  //+transition(all .3s ease-in-out)
+  &:hover 
     .icons__stroke
-      fill: none
       stroke: $black
-      stroke-width: 4
-      stroke-linecap: round
-      stroke-linejoin: round
-      stroke-miterlimit: 10
+      +transition(all .3s ease-in-out)
+  .icons 
+    width: 35px
+    height: auto
 
-    &.icon--ex-col
+  .icons__stroke
+    fill: none
+    stroke: darken($gray, 20%)
+    stroke-width: 4
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke-miterlimit: 10
+    +transition(all .3s ease-in-out)
+
+  .icon--ex-col
+    .icon--ex-col--expand
+      display: none 
+    .icon--ex-col--collapse
+      //display: none
+    .icon--ex-col--arrow
+      //display: none 
+    .icon--ex-col--arrow-up
+      display: none 
+    // &:hover
+    //   .icon--ex-col--expand
+    //     display: block 
+    //   .icon--ex-col--collapse
+    //     display: none 
+
+  &.hover
+    .icon--ex-col--expand
+      display: block
+    .icon--ex-col--collapse
+      display: none
+    &.hover--clicked
       .icon--ex-col--expand
-        //display: none 
-      .icon--ex-col--collapse
-        display: none
-      .icon--ex-col--arrow
         display: none 
-      .icon--ex-col--arrow-up
+      .icon--ex-col--collapse
+        display: block
+      .icon--ex-col--arrow
         //display: none 
-      &:hover
-        .icon--ex-col--expand
-          display: block 
-        .icon--ex-col--collapse
-          display: none 
-  
+      .icon--ex-col--arrow-up
+        display: none
+  &.click
+    .icon--ex-col--expand
+      display: block
+    .icon--ex-col--collapse
+      display: none
+    .icon--ex-col--arrow
+      display: none 
+    .icon--ex-col--arrow-up
+      display: block
