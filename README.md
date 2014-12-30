@@ -2,7 +2,7 @@
 
 ## Still in progress! Just set this up quick and rough and I haven't finished yet. My jQuery skills are also non-existent. Please improve if you so desire!
 ### Notes
-+ Using Neat and Bourbon with SASS 
++ Using Neat and Bourbon with SASS with the help of Hammer
 
 ## What I Want It To Do
 + To literally or symbolically say: this icon will open and show additional content.
