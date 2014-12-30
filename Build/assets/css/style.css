@@ -1,0 +1,102 @@
+/* IMPORT GRID SETTINGS */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.test {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 120.56852%; }
+  .test:last-child {
+    margin-right: 0; }
+
+body {
+  padding: 50px;
+  color: #454545; }
+
+h1 {
+  font-size: 2.666em;
+  margin: 1.333em 0; }
+
+h2 {
+  font-size: 1.87441em;
+  font-weight: bold;
+  margin: 0; }
+
+p {
+  font-size: 1.50038em;
+  line-height: 1.333em;
+  margin: 1.067em 0; }
+
+.svg-wrap {
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 2em; }
+  .svg-wrap:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 500px) {
+    .svg-wrap {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 31.404%; }
+      .svg-wrap:last-child {
+        margin-right: 0; } }
+
+.svg-wrap--ex-col {
+  cursor: pointer; }
+  .svg-wrap--ex-col:hover .icons__stroke {
+    stroke: #333333;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .svg-wrap--ex-col .icons {
+    width: 35px;
+    height: auto; }
+  .svg-wrap--ex-col .icons__stroke {
+    fill: none;
+    stroke: #bfbfbf;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .svg-wrap--ex-col .icon--ex-col .icon--ex-col--expand {
+    display: none; }
+  .svg-wrap--ex-col .icon--ex-col .icon--ex-col--arrow-up {
+    display: none; }
+  .svg-wrap--ex-col.hover .icon--ex-col--expand {
+    display: block; }
+  .svg-wrap--ex-col.hover .icon--ex-col--collapse {
+    display: none; }
+  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--expand {
+    display: none; }
+  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--collapse {
+    display: block; }
+  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--arrow-up {
+    display: none; }
+  .svg-wrap--ex-col.click .icon--ex-col--expand {
+    display: block; }
+  .svg-wrap--ex-col.click .icon--ex-col--collapse {
+    display: none; }
+  .svg-wrap--ex-col.click .icon--ex-col--arrow {
+    display: none; }
+  .svg-wrap--ex-col.click .icon--ex-col--arrow-up {
+    display: block; }
