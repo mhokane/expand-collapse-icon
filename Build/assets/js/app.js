@@ -11,10 +11,14 @@ $(document).ready(function(){
 
   // on click toggle 'click' class, if 'hover' class then remove 'hover' class
   $('.svg-wrap--ex-col').click(function() {
+
     $(this).toggleClass('click').toggleClass('hover');
     if ($(this).hasClass('hover')) {
       $(this).toggleClass('hover--clicked');
     };
+
+    $('.demo-expand').toggleClass('is-expanded');
+
   });
 
 });

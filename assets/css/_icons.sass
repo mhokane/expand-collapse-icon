@@ -6,6 +6,12 @@
   +media($tablet)
     +span-columns(3.33)
 
+  h2, svg 
+    display: inline-block 
+    vertical-align: middle 
+  h2 
+    margin-left: .5em
+
 .svg-wrap--ex-col
   //+transition(all .3s ease-in-out)
   cursor: pointer 
@@ -14,8 +20,8 @@
       stroke: $black
       +transition(all .3s ease-in-out)
   .icons 
-    width: 35px
-    height: auto
+    width: 24px
+    height: 24px
 
   .icons__stroke
     fill: none
@@ -64,3 +70,18 @@
       display: none 
     .icon--ex-col--arrow-up
       display: block
+
+
+.demo-expand 
+  max-height: 0
+  overflow-y: hidden 
+  //background-color: mix($white, $gray, 70%)
+  transition: $transition-slide
+  h2
+    padding: .5em 
+    margin-top: 1em
+  &.is-expanded
+    max-height: 500px
+    transition: $transition-slide 
+
+

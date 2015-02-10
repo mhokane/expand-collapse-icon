@@ -26,11 +26,11 @@ body {
   color: #454545; }
 
 h1 {
-  font-size: 2.666em;
+  font-size: 1.9995em;
   margin: 1.333em 0; }
 
 h2 {
-  font-size: 1.87441em;
+  font-size: 1.40581em;
   font-weight: bold;
   margin: 0; }
 
@@ -57,6 +57,11 @@ p {
       width: 31.404%; }
       .svg-wrap:last-child {
         margin-right: 0; } }
+  .svg-wrap h2, .svg-wrap svg {
+    display: inline-block;
+    vertical-align: middle; }
+  .svg-wrap h2 {
+    margin-left: 0.5em; }
 
 .svg-wrap--ex-col {
   cursor: pointer; }
@@ -66,8 +71,8 @@ p {
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
   .svg-wrap--ex-col .icons {
-    width: 35px;
-    height: auto; }
+    width: 24px;
+    height: 24px; }
   .svg-wrap--ex-col .icons__stroke {
     fill: none;
     stroke: #bfbfbf;
@@ -100,3 +105,14 @@ p {
     display: none; }
   .svg-wrap--ex-col.click .icon--ex-col--arrow-up {
     display: block; }
+
+.demo-expand {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.25s cubic-bezier(0.52, 0, 0.58, 1); }
+  .demo-expand h2 {
+    padding: 0.5em;
+    margin-top: 1em; }
+  .demo-expand.is-expanded {
+    max-height: 500px;
+    transition: max-height 0.25s cubic-bezier(0.52, 0, 0.58, 1); }
