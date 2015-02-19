@@ -22,7 +22,7 @@
     margin-right: 0; }
 
 body {
-  padding: 50px;
+  padding: 20px;
   color: #454545; }
 
 h1 {
@@ -41,14 +41,13 @@ p {
 
 .svg-wrap {
   text-align: center;
-  float: left;
   display: block;
-  margin-right: 2.84259%;
-  width: 100%;
   background-color: #f2f2f2;
   padding: 2em; }
-  .svg-wrap:last-child {
-    margin-right: 0; }
+  .svg-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
   @media screen and (min-width: 500px) {
     .svg-wrap {
       float: left;
@@ -61,7 +60,25 @@ p {
     display: inline-block;
     vertical-align: middle; }
   .svg-wrap h2 {
-    margin-left: 0.5em; }
+    padding: 0 0.5em;
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 79.43148%;
+    text-align: left; }
+    .svg-wrap h2:last-child {
+      margin-right: 0; }
+    .svg-wrap h2:nth-child(2) {
+      margin-right: 0; }
+    .svg-wrap h2:nth-child(2+1) {
+      clear: left; }
+  .svg-wrap svg {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 17.72593%; }
+    .svg-wrap svg:last-child {
+      margin-right: 0; }
 
 .svg-wrap--ex-col {
   cursor: pointer; }
@@ -87,15 +104,11 @@ p {
     display: none; }
   .svg-wrap--ex-col .icon--ex-col .icon--ex-col--arrow-up {
     display: none; }
-  .svg-wrap--ex-col.hover .icon--ex-col--expand {
-    display: block; }
-  .svg-wrap--ex-col.hover .icon--ex-col--collapse {
+  .svg-wrap--ex-col .icon--ex-col.hover--clicked .icon--ex-col--expand {
     display: none; }
-  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--expand {
-    display: none; }
-  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--collapse {
+  .svg-wrap--ex-col .icon--ex-col.hover--clicked .icon--ex-col--collapse {
     display: block; }
-  .svg-wrap--ex-col.hover.hover--clicked .icon--ex-col--arrow-up {
+  .svg-wrap--ex-col .icon--ex-col.hover--clicked .icon--ex-col--arrow-up {
     display: none; }
   .svg-wrap--ex-col.click .icon--ex-col--expand {
     display: block; }
@@ -105,14 +118,28 @@ p {
     display: none; }
   .svg-wrap--ex-col.click .icon--ex-col--arrow-up {
     display: block; }
+  @media screen and (min-width: 1000px) {
+    .svg-wrap--ex-col.hover .icon--ex-col--expand {
+      display: block; }
+    .svg-wrap--ex-col.hover .icon--ex-col--collapse {
+      display: none; } }
 
 .demo-expand {
   max-height: 0;
   overflow-y: hidden;
+  clear: left;
   transition: max-height 0.25s cubic-bezier(0.52, 0, 0.58, 1); }
-  .demo-expand h2 {
-    padding: 0.5em;
-    margin-top: 1em; }
+  .demo-expand h3 {
+    padding: 0.5em 0;
+    margin-top: 1em;
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 79.43148%;
+    margin-left: 20.56852%; }
+    .demo-expand h3:last-child {
+      margin-right: 0; }
   .demo-expand.is-expanded {
     max-height: 500px;
     transition: max-height 0.25s cubic-bezier(0.52, 0, 0.58, 1); }
