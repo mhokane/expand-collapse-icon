@@ -13,10 +13,16 @@
 + Solutions involving arrows are easily confused with existing conventions for resizing or sorting.
 + Text solutions such as 'less' or 'more' are vague and confusing; 'expand' and 'collapse' are too lengthy.
 
-## Possible Solutions
+## Possible Solutions and Current Implementations
+### Possible:
 + Animated SVG (on hover)
   + This initial icon would have to be clear on touch devices (where hover is not an option) 
-+ is the ‘i’ information symbol universal?
+  + Have yet to implement using Snap SVG to literally expand the 'drawer' down on hover
+  + Have yet to setup a PNG fallback with Modernizr
++ is the ‘i’ information symbol universal? This was a thought but I think the 'i' is too roman alphabet specific.
+
+### Implemented:
++ CSS Animated SVG that falls back to work well on touch devices. I like where this is at.
 
 ## License
 
